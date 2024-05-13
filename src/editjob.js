@@ -130,7 +130,7 @@ function EditJob() {
                 let response=await axios.put(`https://maritimebackend.azurewebsites.net/maritime/job/editjob/${Id}`,{title,description,requirements,responsibilities,location,companyName,companyLogoUrl,aboutCompany,salary,contractType,description,perksAndBenefits,postedON:new Date().toLocaleDateString(),category})
                 if(response.data.success)
                 {
-                    toast.success("Job Successfully Posted!",{position:"top-center",style:{fontFamily:"Caslon Antique"}})
+                    toast.success("Job Successfully Updated!",{position:"top-center",style:{fontFamily:"Caslon Antique"}})
                     
                     // setTimeout(()=>{
                     //     navigate("/")

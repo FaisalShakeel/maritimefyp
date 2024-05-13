@@ -1,16 +1,83 @@
-.App {
-  text-align: center;
+#signupcontainer{
+  width: "100%";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: lightblue;
+  font-family: Caslon Antique;
+  width: 500px;
+  margin: auto;
+  border-radius: 10px;
+  color: white;
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#jobandcoursecontainer
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
+#jobcontainer
+{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: auto;
+  margin-top: 10px;
+  font-family: Caslon Antique;
+  height: 240px;
+  
+  background-color: aliceblue;
+}
+#coursecontainer
+{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: auto;
+  margin-top: 10px;
+  font-family: Caslon Antique;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  
+  background-color: aliceblue;
+}
+#footer
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: lightblue;
+}
+@media (min-width: 0px) and (max-width: 600px) {
+  #jobandcoursecontainer {
+    flex-direction: column;
   }
+
+}
+@media(min-width:0px) and (max-width:600px)
+
+{
+  #footer
+  {
+    flex-direction: column;
+  }
+
+}
+
+
+@media (min-width: 0px) and (max-width: 499px) {
+  #jobcontainer{
+    width: 100%;
+  }
+  #coursecontainer{
+    width: 100%;
+  }
+  #signupcontainer {
+    width:100%;
+    background-color:lightblue;
+    color: black;
+  }
+
 }
 
 .App-header {
